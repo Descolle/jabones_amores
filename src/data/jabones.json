@@ -9,7 +9,7 @@
   {
     "id": 2,
     "nombre": "Jabón de curcuma",
-    "imagen": "/public/img/jabon_2.jpeg",
+    "imagen": "/img/jabon_2.jpeg",
     "descripcion": "Jabón de glicerina con cúrcuma: hidrata profundamente, ilumina la piel y ayuda a unificar el tono de forma natural ✨🌿.",
     "valor": "2.500"
   },
