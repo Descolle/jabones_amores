@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nombre": "Corazón de Manzanilla",
+    "imagen": "/img/jabon_corazon.jpeg",
+    "descripcion": "Jabón de glicerina con manzanilla: limpia suavemente, calma la piel sensible y deja una sensación fresca y relajante 🌼✨.",
+    "valor": "2.000"
+  },
+  {
+    "id": 2,
+    "nombre": "Jabón de curcuma",
+    "imagen": "/public/img/jabon_2.jpeg",
+    "descripcion": "Jabón de glicerina con cúrcuma: hidrata profundamente, ilumina la piel y ayuda a unificar el tono de forma natural ✨🌿.",
+    "valor": "2.500"
+  },
+  {
+    "id": 3,
+    "nombre": "Jabón Lavanda",
+    "imagen": "/public/img/producto-agotado.jpg",
+    "descripcion": "limpia e hidrata mientras relaja la piel y los sentidos, ideal para el descanso 🌿💜.",
+    "valor": "2.500"
+  },
+  {
+    "id": 4,
+    "nombre": "Jabón de Coco",
+    "imagen": "/public/img/producto-agotado.jpg",
+    "descripcion": "nutrición intensa y suavidad duradera, deja la piel tersa y luminosa 🥥✨.",
+    "valor": "2.500"
+  },
+  {
+    "id": 4,
+    "nombre": "Jabón de Aloe Vera",
+    "imagen": "/public/img/producto-agotado.jpg",
+    "descripcion": "hidrata, refresca y repara, perfecto para piel sensible o irritada 🌱💧.",
+    "valor": "2.500"
+  }
+]
