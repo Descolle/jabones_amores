@@ -5,7 +5,7 @@ const Wsp = () => {
         <p className="wsp-text">Contactanos</p>
       </div>
       <a href="https://wa.me/+56988380845" target="_blank">
-        <img src="/public/img/wsp2.png" alt="WhatsApp" className="wsp-img" />
+        <img src="/img/wsp2.png" alt="WhatsApp" className="wsp-img" />
       </a>
     </div>
   );

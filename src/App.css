@@ -5,56 +5,88 @@ body,
   width: 100%;
   margin: 0;
   background-size: cover;
+  font-family: "Fira Code", monospace;
 }
 
-/*navbar*/
+/* ============================= */
+/* 🧭 NAVBAR */
+/* ============================= */
 .fondo {
-  align-items: top;
-  text-align: top;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: lightgray;
-  font-family: "Fira Code", monospace;
   font-size: 1rem;
   font-weight: 400;
+  padding: 10px 40px;
 }
 
+/* ============================= */
+/* 🌟 MAIN / HERO */
+/* ============================= */
 .main {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #fff3cd, #f8e8a0);
 }
 
-/*texto*/
+.main-content {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ============================= */
+/* 🧼 SECCIÓN SOMOS */
+/* ============================= */
 .somos {
   margin-top: 30px;
   display: flex;
-  background-image: url(../public//img/fondo_chatgpt.png);
+  justify-content: center;
   align-items: center;
-  padding: 0px 300px;
-  min-height: 400px;
+  background-image: url(../public/img/fondo_chatgpt.png);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  min-height: 300px;
   text-align: center;
-  font-family: "Fira Code", monospace;
   font-size: 1.5rem;
   font-weight: 600;
   font-style: oblique;
   color: black;
-  border: 3px dotted goldenrod;
-  border-radius: 20%;
+  border: 2px solid goldenrod;
+  border-radius: 20px;
 }
 
-/* carta-container*/
-
+/* ============================= */
+/* 🃏 CARTAS DE PRODUCTOS */
+/* ============================= */
 .carta-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem;
-  align-items: stretch; /* 👈 importante */
 }
 
 .carta {
-  border: 2px solid black;
+  border-radius: 15px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.carta:hover {
+  transform: translateY(-5px);
 }
 
 .carta img {
@@ -63,69 +95,75 @@ body,
   object-fit: cover;
 }
 
-/*footer*/
+.carta .contenido {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ============================= */
+/* ⚫ FOOTER */
+/* ============================= */
 .Footer {
   background-color: black;
   color: white;
   text-align: center;
+  padding: 1rem;
 }
 
-/*wsp-container*/
+/* ============================= */
+/* 💬 WHATSAPP FLOTANTE */
+/* ============================= */
 .wsp-container {
   display: flex;
   align-items: center;
-  flex-direction: row;
+  gap: 10px;
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 999;
 }
-/*"wsp-text-container*/
+
 .wsp-text-container {
-  bottom: 100px;
   text-align: center;
   font-weight: 500;
-  right: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 10px;
+  font-size: 0.9rem;
 }
 
-/*wsp-img*/
 .wsp-img {
-  bottom: 20px;
-  right: 20px;
   width: 80px;
   height: 80px;
-  z-index: 100;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.wsp-img:hover {
+  transform: scale(1.05);
 }
 
 /* ============================= */
-/* 📱 Responsive - Celular */
+/* 📱 RESPONSIVE */
 /* ============================= */
 @media (max-width: 768px) {
-  /* Texto "somos" */
-  .somos {
-    padding: 20px;
-    min-height: auto;
-    font-size: 1.1rem;
-    border-radius: 20px;
+  .fondo {
+    padding: 10px 20px;
   }
 
-  /* Cartas: 1 por fila */
+  .somos {
+    padding: 1.5rem;
+    min-height: auto;
+    font-size: 1.1rem;
+  }
+
   .carta-container {
     grid-template-columns: 1fr;
     padding: 1rem;
   }
 
-  .carta {
-    width: 100%;
-  }
-
-  /* WhatsApp */
-  .wsp-container {
-    gap: 5px;
-    bottom: 15px;
-    right: 15px;
+  .main-content {
+    padding: 1.5rem;
   }
 
   .wsp-img {
