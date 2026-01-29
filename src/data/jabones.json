@@ -16,21 +16,21 @@
   {
     "id": 3,
     "nombre": "Jabón Lavanda",
-    "imagen": "/public/img/producto-agotado.jpg",
+    "imagen": "/img/producto-agotado.jpg",
     "descripcion": "limpia e hidrata mientras relaja la piel y los sentidos, ideal para el descanso 🌿💜.",
     "valor": "2.500"
   },
   {
     "id": 4,
     "nombre": "Jabón de Coco",
-    "imagen": "/public/img/producto-agotado.jpg",
+    "imagen": "/img/producto-agotado.jpg",
     "descripcion": "nutrición intensa y suavidad duradera, deja la piel tersa y luminosa 🥥✨.",
     "valor": "2.500"
   },
   {
     "id": 4,
     "nombre": "Jabón de Aloe Vera",
-    "imagen": "/public/img/producto-agotado.jpg",
+    "imagen": "/img/producto-agotado.jpg",
     "descripcion": "hidrata, refresca y repara, perfecto para piel sensible o irritada 🌱💧.",
     "valor": "2.500"
   }

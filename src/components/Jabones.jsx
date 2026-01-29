@@ -13,7 +13,7 @@ function Jabones() {
             <Card.Text className="precio">Precio: ${jabon.valor}</Card.Text>
           </Card.Body>
         </Card>
-      ))}
+      ))}  
     </div>
   );
 }
