@@ -4,7 +4,10 @@ const Wsp = () => {
       <div className="wsp-text-container">
         <p className="wsp-text">Contactanos</p>
       </div>
-      <a href="https://wa.me/+56988380845" target="_blank">
+      <a
+        href="https://wa.me/+56988380845?text=¡Hola!%20me%20gustaría%20saber%20más%20sobre%20sus%20jabones."
+        target="_blank"
+      >
         <img src="/img/wsp2.png" alt="WhatsApp" className="wsp-img" />
       </a>
     </div>
