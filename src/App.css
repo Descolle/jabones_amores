@@ -103,11 +103,23 @@ body,
 /* ============================= */
 /* ⚫ FOOTER */
 /* ============================= */
-.Footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+.footer {
+  display: flex;
+  justify-content: space-between; /* texto izquierda - icono derecha */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: lightgray;
+  font-size: 0.9rem;
+}
+
+.instagram-link img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.instagram-link img:hover {
+  transform: scale(1.2);
 }
 
 /* ============================= */
@@ -133,8 +145,8 @@ body,
 }
 
 .wsp-img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -174,5 +186,10 @@ body,
   .wsp-text-container {
     font-size: 0.8rem;
     padding: 6px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
   }
 }
