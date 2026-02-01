@@ -33,5 +33,12 @@
     "imagen": "/img/producto-agotado.jpg",
     "descripcion": "hidrata, refresca y repara, perfecto para piel sensible o irritada 🌱💧.",
     "valor": "2.500"
+  },
+  {
+    "id": 5,
+    "nombre": "Jabón para Enamorados",
+    "imagen": "/img/jabon_enamorados.jpeg",
+    "descripcion": "Disfruta de la magia del amore verdadero con este jabón especial 💌✨. La promoción incluye 2 corazones para ese alguien especial y uno pequeño para que el amor te acompañe donde quiera que vayas.",
+    "valor": "4.000"
   }
 ]
