@@ -5,7 +5,7 @@ function Jabones() {
   return (
     <div className="carta-container">
       {jabones.map((jabon) => (
-        <Card style={{ width: "12rem" }} key={jabon.id} className="carta">
+        <Card style={{ width: "13rem" }} key={jabon.id} className="carta">
           <Card.Img variant="top" src={jabon.imagen} />
           <Card.Body>
             <Card.Title>{jabon.nombre}</Card.Title>
@@ -13,7 +13,7 @@ function Jabones() {
             <Card.Text className="precio">Precio: ${jabon.valor}</Card.Text>
           </Card.Body>
         </Card>
-      ))}  
+      ))}
     </div>
   );
 }
