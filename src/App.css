@@ -26,8 +26,10 @@ body,
 /* ============================= */
 .main {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
   background: linear-gradient(135deg, #f8e8a0);
 }
 
@@ -55,8 +57,8 @@ body,
   box-shadow: 20px 40px 40px 20px #f8e8a0 inset;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
-  width: 5000px;
+  height: 400px;
+  width: 400%; /* ❗️cambia esto */
 }
 
 /* ============================= */
@@ -212,37 +214,47 @@ body,
 /* 📱 RESPONSIVE */
 /* ============================= */
 @media (max-width: 768px) {
+  /* HERO EN COLUMNA */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column; /* 🔥 clave */
+      padding: 1.5rem;
+    }
+
+    .hero-content {
+      padding: 0;
+    }
+
+    .hero-text {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    .hero-img {
+      display: none;
+    }
+  }
+
+  /* NAVBAR MÁS COMPACTO */
   .fondo {
-    padding: 10px 20px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
   }
 
-  .somos {
-    padding: 1.5rem;
-    min-height: auto;
-    font-size: 1.1rem;
+  /* BENEFICIOS MÁS PEQUEÑOS */
+  .benefits-box h2 {
+    font-size: 1.5rem;
   }
 
-  .carta-container {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .main-content {
-    padding: 1.5rem;
+  /* WHATSAPP MÁS PEQUEÑO */
+  .wsp-container {
+    bottom: 10px;
+    right: 10px;
   }
 
   .wsp-img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .wsp-text-container {
-    font-size: 0.8rem;
-    padding: 6px;
-  }
-  .footer {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
+    width: 55px;
+    height: 55px;
   }
 }
