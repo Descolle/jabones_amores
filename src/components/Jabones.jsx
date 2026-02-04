@@ -5,12 +5,22 @@ function Jabones() {
   return (
     <div className="carta-container">
       {jabones.map((jabon) => (
-        <Card style={{ width: "13rem" }} key={jabon.id} className="carta">
-          <Card.Img variant="top" src={jabon.imagen} />
-          <Card.Body>
+        <Card key={jabon.id} className="carta">
+          <div className="carta-img">
+            <Card.Img variant="top" src={jabon.imagen} />
+          </div>
+
+          <Card.Body className="carta-body">
             <Card.Title>{jabon.nombre}</Card.Title>
             <Card.Text>{jabon.descripcion}</Card.Text>
-            <Card.Text className="precio">Precio: ${jabon.valor}</Card.Text>
+            <Card.Text className="precio">💰 ${jabon.valor}</Card.Text>
+
+            <a
+              href={`https://wa.me/56988380845?text=Hola,%20quiero%20el%20jabón%20${jabon.nombre}`}
+              className="btn-comprar"
+            >
+              Comprar
+            </a>
           </Card.Body>
         </Card>
       ))}

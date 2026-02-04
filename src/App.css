@@ -26,78 +26,131 @@ body,
 /* ============================= */
 .main {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, #fff3cd, #f8e8a0);
+  background: linear-gradient(135deg, #f8e8a0);
 }
 
-.main-content {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
-  padding: 2rem 3rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  max-width: 900px;
-  width: 100%;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1 rem;
+  font-weight: 500;
   text-align: center;
+  margin: 20px auto;
+  color: #333;
 }
-
 /* ============================= */
 /* 🧼 SECCIÓN SOMOS */
 /* ============================= */
-.somos {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-img {
   background-image: url(../public/img/fondo_chatgpt.png);
+  box-shadow: 20px 40px 40px 20px #f8e8a0 inset;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  padding: 3rem;
-  min-height: 300px;
+  height: 300px;
+  width: 5000px;
+}
+
+/* ============================= */
+/* 🧼 SBeneficios */
+/* ============================= */
+.benefits-box {
+  padding: 3rem 2rem;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-style: oblique;
-  color: black;
-  border: 2px solid goldenrod;
-  border-radius: 20px;
+}
+
+.benefits-box h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefits-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.benefits-card:hover {
+  transform: translateY(-5px);
 }
 
 /* ============================= */
 /* 🃏 CARTAS DE PRODUCTOS */
 /* ============================= */
+/* GRID DE CARDS */
 .carta-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   padding: 2rem;
 }
 
+/* CARD */
 .carta {
-  border-radius: 15px;
+  border-radius: 18px !important;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  border: none !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
   background: white;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
 }
 
 .carta:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
-.carta img {
-  width: 100%;
-  height: 200px;
+/* IMAGEN */
+.carta-img img {
+  height: 180px;
   object-fit: cover;
 }
 
-.carta .contenido {
-  padding: 1rem;
+/* BODY */
+.carta-body {
   text-align: center;
+}
+
+/* PRECIO */
+.precio {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #6b8e23;
+}
+
+/* BOTÓN */
+.btn-comprar {
+  background: #6b8e23;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-comprar:hover {
+  background: #4f6b1a;
+  transform: scale(1.05);
 }
 
 /* ============================= */
