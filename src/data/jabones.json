@@ -16,7 +16,7 @@
   {
     "id": 3,
     "nombre": "Jabón Lavanda",
-    "imagen": "/img/producto-agotado.jpg",
+    "imagen": "/img/jabon_lavanda.jpeg",
     "descripcion": "limpia e hidrata mientras relaja la piel y los sentidos, ideal para el descanso 🌿💜.",
     "valor": "2.500"
   },
@@ -27,13 +27,11 @@
     "descripcion": "Disfruta de la magia del amore verdadero con este jabón especial 💌✨. La promoción incluye 2 corazones para ese alguien especial y uno pequeño para que el amor te acompañe donde quiera que vayas.",
     "valor": "4.500"
   },
-{
+  {
     "id": 5,
     "nombre": "Jabón Racimo de Uva",
-    "imagen": "/img/jabon_uva.jpeg",
+    "imagen": "/img/racimo_uva.jpeg",
     "descripcion": "Jabón de glicerina racimo de uva: hidrata profundamente, suaviza la piel y deja un aroma floral encantador 🍇✨.",
     "valor": "8.000"
-}
-
-
+  }
 ]
